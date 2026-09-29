@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: "Playfair Display", Georgia, serif;
+    --font-cinzel: "Cinzel", Georgia, serif;
+    --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #08101E;
+    color: #F1F5F9;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: var(--font-serif);
+  }
+
+  .font-cinzel {
+    font-family: var(--font-cinzel);
+  }
+}
+
+.font-serif {
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+.font-cinzel {
+  font-family: "Cinzel", Georgia, serif;
+}
+
+.font-sans {
+  font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+}
+
+.text-gold {
+  color: #C59139;
+}
+
+.bg-gold {
+  background-color: #C59139;
+}
+
+.border-gold {
+  border-color: #C59139;
+}
+
+.gold-line {
+  height: 2px;
+  background: linear-gradient(90deg, #ECC480 0%, #C59139 50%, #9C6E21 100%);
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: #08101E;
+}
+::-webkit-scrollbar-thumb {
+  background: #C59139;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E5B263;
+}
